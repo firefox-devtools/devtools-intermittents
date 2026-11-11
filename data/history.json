@@ -4354,5 +4354,215 @@
     "patches": []
    }
   ]
+ },
+ {
+  "week": "2026-11-11",
+  "start": "2026-11-04",
+  "end": "2026-11-10",
+  "bugCount": 4,
+  "total": 83,
+  "bugs": [
+   {
+    "count": 31,
+    "id": 2087049,
+    "summary": "High frequency devtools/client/debugger/test/mochitest/browser_dbg-reloading.js | single tracking bug",
+    "status": "NEW",
+    "resolution": "",
+    "configs": [
+     [
+      "linux2404-64-tsan",
+      19
+     ],
+     [
+      "linux2404-64 debug",
+      3
+     ],
+     [
+      "windows11-64-25h2 debug",
+      1
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      13
+     ],
+     [
+      "try",
+      13
+     ],
+     [
+      "mozilla-central",
+      3
+     ],
+     [
+      "mozilla-beta",
+      2
+     ]
+    ],
+    "messages": [
+     [
+      "Test timed out",
+      31
+     ]
+    ],
+    "firstFailure": "2026-11-04",
+    "lastFailure": "2026-11-10",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=try&revision=fdfdfea259192d95248a3c1b9490d9ef3ec73b3b&selectedTaskRun=Ajcfsf1PSqm6Z8QBsJstcg.0",
+    "assignee": null,
+    "needinfos": [],
+    "patches": []
+   },
+   {
+    "count": 23,
+    "id": 2087076,
+    "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-content-script-sources.js | single tracking bug",
+    "status": "NEW",
+    "resolution": "",
+    "configs": [
+     [
+      "macosx1500-aarch64",
+      21
+     ],
+     [
+      "macosx1500-aarch64-devedition",
+      2
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      18
+     ],
+     [
+      "mozilla-beta",
+      3
+     ],
+     [
+      "try",
+      1
+     ],
+     [
+      "mozilla-central",
+      1
+     ]
+    ],
+    "messages": [
+     [
+      "Failed waitFor(): Ensure that we only get the main thread and the two content scripts thread",
+      23
+     ]
+    ],
+    "firstFailure": "2026-11-04",
+    "lastFailure": "2026-11-10",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=autoland&revision=b074502553241caf1c9abcc1987e1a3a99683a16&selectedTaskRun=BhP-kEeVQvGWoOH3G63h0Q.0",
+    "assignee": null,
+    "needinfos": [],
+    "patches": []
+   },
+   {
+    "count": 16,
+    "id": 2090348,
+    "summary": "Intermitten devtools/client/inspector/rules/test/browser_rules_style-editor-link.js | uncaught rejection: can't access property \"cm6\", this.config is null",
+    "status": "NEW",
+    "resolution": "",
+    "configs": [
+     [
+      "windows11-64-25h2",
+      8
+     ],
+     [
+      "windows11-32-25h2",
+      2
+     ],
+     [
+      "linux2404-64",
+      2
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      16
+     ]
+    ],
+    "messages": [
+     [
+      "uncaught rejection: can't access property \"cm6\", this.config is null",
+      11
+     ],
+     [
+      "Failure: Link text changed to display correct location: doc_sourcemaps.scss:4",
+      2
+     ]
+    ],
+    "firstFailure": "2026-11-06",
+    "lastFailure": "2026-11-10",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=autoland&revision=544f733c0349539a0cd8d4f675d15da53bbf347d&selectedTaskRun=TloxPBcdQNO1zjQdb95deQ.0",
+    "assignee": null,
+    "needinfos": [
+     {
+      "who": "hmanilla",
+      "since": "2026-11-06"
+     }
+    ],
+    "patches": []
+   },
+   {
+    "count": 13,
+    "id": 2011566,
+    "summary": "Frequent Linux devtools/client/inspector/test/browser_inspector_picker-page-reload.js | single tracking bug",
+    "status": "NEW",
+    "resolution": "",
+    "configs": [
+     [
+      "windows11-64-25h2 debug",
+      7
+     ],
+     [
+      "windows11-64-24h2 debug",
+      3
+     ],
+     [
+      "linux2404-64",
+      2
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      7
+     ],
+     [
+      "mozilla-central",
+      3
+     ],
+     [
+      "mozilla-beta",
+      2
+     ],
+     [
+      "try",
+      1
+     ]
+    ],
+    "messages": [
+     [
+      "uncaught rejection: Protocol error (SecurityError): Permission denied to access property \"document\" on cross-origin object from: server0.conn0.watcher2.process11//domwalker80 (resource://devtools/server/actors/inspector/node-picker.js:393:9)",
+      10
+     ],
+     [
+      "uncaught rejection: Protocol error (SecurityError): Permission denied to access property \"document\" on cross-origin object from: server0.conn0.watcher2.process10//domwalker80 (resource://devtools/server/actors/inspector/node-picker.js:393:9)",
+      2
+     ]
+    ],
+    "firstFailure": "2026-11-04",
+    "lastFailure": "2026-11-10",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=mozilla-central&revision=098aacc522276d9c177d3c253e7f0af138b9a745&selectedTaskRun=ICFx1cLdT2iAT9CMdiXdUw.0",
+    "assignee": "ochameau",
+    "needinfos": [],
+    "patches": []
+   }
+  ]
  }
 ]
