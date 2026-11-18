@@ -4564,5 +4564,311 @@
     "patches": []
    }
   ]
+ },
+ {
+  "week": "2026-11-18",
+  "start": "2026-11-11",
+  "end": "2026-11-17",
+  "bugCount": 6,
+  "total": 201,
+  "bugs": [
+   {
+    "count": 80,
+    "id": 2090348,
+    "summary": "Intermitten devtools/client/inspector/rules/test/browser_rules_style-editor-link.js | uncaught rejection: can't access property \"cm6\", this.config is null",
+    "status": "ASSIGNED",
+    "resolution": "",
+    "configs": [
+     [
+      "windows11-64-25h2",
+      61
+     ],
+     [
+      "linux2404-64",
+      9
+     ],
+     [
+      "windows11-64-25h2 asan",
+      5
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      60
+     ],
+     [
+      "mozilla-central",
+      17
+     ],
+     [
+      "try",
+      3
+     ]
+    ],
+    "messages": [
+     [
+      "uncaught rejection: can't access property \"cm6\", this.config is null",
+      67
+     ],
+     [
+      "test_get_open_tabs_empty_when_no_http_tabs - Uncaught exception in test - A result for get_open_tabs should be returned in the conversation. - timed out after 50 tries.",
+      7
+     ]
+    ],
+    "firstFailure": "2026-11-11",
+    "lastFailure": "2026-11-17",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=mozilla-central&revision=8dc8a7e0642289c9782651295b5586e008cbc6c4&selectedTaskRun=DT8VmRxFQiaD-QRybORwLQ.0",
+    "assignee": "jdescottes",
+    "needinfos": [
+     {
+      "who": "hmanilla",
+      "since": "2026-11-06"
+     }
+    ],
+    "patches": [
+     "D343949"
+    ]
+   },
+   {
+    "count": 65,
+    "id": 2087049,
+    "summary": "High frequency devtools/client/debugger/test/mochitest/browser_dbg-reloading.js | single tracking bug",
+    "status": "NEW",
+    "resolution": "",
+    "configs": [
+     [
+      "linux2404-64-tsan",
+      52
+     ],
+     [
+      "macosx1500-aarch64 debug",
+      2
+     ],
+     [
+      "macosx1500-aarch64",
+      2
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      42
+     ],
+     [
+      "try",
+      14
+     ],
+     [
+      "mozilla-central",
+      7
+     ],
+     [
+      "mozilla-beta",
+      2
+     ]
+    ],
+    "messages": [
+     [
+      "uncaught rejection: can't access property \"targetFront\", threadFront is null",
+      37
+     ],
+     [
+      "Test timed out",
+      25
+     ]
+    ],
+    "firstFailure": "2026-11-11",
+    "lastFailure": "2026-11-17",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=autoland&revision=3486ce2e201187f5261dda89a951d7a39f3f7216&selectedTaskRun=SQUkfZQXRYmi2QRdEDgZyA.0",
+    "assignee": null,
+    "needinfos": [],
+    "patches": [
+     "D343953"
+    ]
+   },
+   {
+    "count": 22,
+    "id": 2011566,
+    "summary": "Frequent Linux devtools/client/inspector/test/browser_inspector_picker-page-reload.js | single tracking bug",
+    "status": "NEW",
+    "resolution": "",
+    "configs": [
+     [
+      "windows11-64-25h2 debug",
+      16
+     ],
+     [
+      "linux2404-64",
+      3
+     ],
+     [
+      "macosx1500-aarch64",
+      2
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      13
+     ],
+     [
+      "mozilla-central",
+      6
+     ],
+     [
+      "mozilla-beta",
+      3
+     ]
+    ],
+    "messages": [
+     [
+      "uncaught rejection: Protocol error (SecurityError): Permission denied to access property \"document\" on cross-origin object from: server0.conn0.watcher2.process11//domwalker80 (resource://devtools/server/actors/inspector/node-picker.js:393:9)",
+      17
+     ],
+     [
+      "uncaught rejection: Protocol error (SecurityError): Permission denied to access property \"document\" on cross-origin object from: server0.conn0.watcher2.process10//domwalker80 (resource://devtools/server/actors/inspector/node-picker.js:393:9)",
+      3
+     ]
+    ],
+    "firstFailure": "2026-11-11",
+    "lastFailure": "2026-11-17",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=autoland&revision=b3873624bad5624755cf76d9ccf69aab2c4ee082&selectedTaskRun=MDEI56U2RDScy_V5IglnfA.0",
+    "assignee": "ochameau",
+    "needinfos": [],
+    "patches": []
+   },
+   {
+    "count": 12,
+    "id": 2087076,
+    "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-content-script-sources.js | single tracking bug",
+    "status": "ASSIGNED",
+    "resolution": "",
+    "configs": [
+     [
+      "macosx1500-aarch64",
+      9
+     ],
+     [
+      "macosx1500-aarch64-devedition",
+      2
+     ],
+     [
+      "windows11-64-25h2",
+      1
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      9
+     ],
+     [
+      "try",
+      2
+     ],
+     [
+      "mozilla-beta",
+      1
+     ]
+    ],
+    "messages": [
+     [
+      "Failed waitFor(): Ensure that we only get the main thread and the two content scripts thread",
+      12
+     ]
+    ],
+    "firstFailure": "2026-11-11",
+    "lastFailure": "2026-11-17",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=mozilla-beta&revision=c0b006c1d13879acd632aa58519a46ac1ae135d8&selectedTaskRun=UWiybLccT9yICnZWTtgN5A.0",
+    "assignee": "jdescottes",
+    "needinfos": [],
+    "patches": [
+     "D343943"
+    ]
+   },
+   {
+    "count": 11,
+    "id": 2092096,
+    "summary": "Perma devtools/client/debugger/test/mochitest/browser_dbg-reloading.js | Test timed out - when Gecko 162 merges to beta on 2026-11-19",
+    "status": "VERIFIED",
+    "resolution": "FIXED",
+    "configs": [
+     [
+      "macosx1500-aarch64 debug",
+      3
+     ],
+     [
+      "linux2404-64 debug",
+      2
+     ],
+     [
+      "windows11-64-25h2 debug",
+      2
+     ]
+    ],
+    "trees": [
+     [
+      "try",
+      11
+     ]
+    ],
+    "messages": [
+     [
+      "Test timed out",
+      10
+     ],
+     [
+      "uncaught rejection: can't access property \"cm6\", this.config is null",
+      1
+     ]
+    ],
+    "firstFailure": "2026-11-12",
+    "lastFailure": "2026-11-12",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=try&revision=d7228101006fa262c44c177b5388de638ac9c0f1&selectedTaskRun=bJJwBshcTQ2Dbt-EYEOyBA.0",
+    "assignee": "bomsy",
+    "needinfos": [
+     {
+      "who": "florian",
+      "since": "2026-11-12"
+     }
+    ],
+    "patches": [
+     "D342247",
+     "D342283"
+    ]
+   },
+   {
+    "count": 11,
+    "id": 2093910,
+    "summary": "Perma [tier2] devtools/shared/test-helpers/browser_dump_scope.js | single tracking bug",
+    "status": "NEW",
+    "resolution": "",
+    "configs": [
+     [
+      "windows11-64-25h2-ccov",
+      11
+     ]
+    ],
+    "trees": [
+     [
+      "mozilla-central",
+      11
+     ]
+    ],
+    "messages": [
+     [
+      "testSyncStack - dumpScope returned 3 frames - Got 11, expected 3",
+      11
+     ]
+    ],
+    "firstFailure": "2026-11-17",
+    "lastFailure": "2026-11-17",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=mozilla-central&revision=8dc8a7e0642289c9782651295b5586e008cbc6c4&selectedTaskRun=Bea-j0bTRMKhlgnxLXfxkA.0",
+    "assignee": null,
+    "needinfos": [],
+    "patches": []
+   }
+  ]
  }
 ]
