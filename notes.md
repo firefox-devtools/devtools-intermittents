@@ -1,9 +1,14 @@
 ## 2026-11-11
 
 - [ ] 2087049
+  - TSAN only, spiking even more with new errors about `uncaught rejection: can't access property "targetFront", threadFront is null`
+  - Maybe regressed (or increased freq) since https://bugzilla.mozilla.org/show_bug.cgi?id=2092096 and https://bugzilla.mozilla.org/show_bug.cgi?id=2081428
 - [ ] 2087076
+  - macos only, recent spike. Maybe stylesheets in debugger as well. 
 - [ ] 2090348
+  - regressed by Bug 2087450 - Update the tooltip messages for style links which open stylesheets in the debugger 
 - [ ] 2011566
+  - The usual picker issue which hits the security error...
 
 ## 2026-11-04
 
