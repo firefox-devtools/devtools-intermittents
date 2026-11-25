@@ -4870,5 +4870,246 @@
     "patches": []
    }
   ]
+ },
+ {
+  "week": "2026-11-25",
+  "start": "2026-11-18",
+  "end": "2026-11-24",
+  "bugCount": 5,
+  "total": 195,
+  "bugs": [
+   {
+    "count": 86,
+    "id": 2087049,
+    "summary": "High frequency devtools/client/debugger/test/mochitest/browser_dbg-reloading.js | single tracking bug",
+    "status": "RESOLVED",
+    "resolution": "FIXED",
+    "configs": [
+     [
+      "linux2404-64-tsan",
+      86
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      66
+     ],
+     [
+      "mozilla-central",
+      15
+     ],
+     [
+      "mozilla-beta",
+      4
+     ],
+     [
+      "try",
+      1
+     ]
+    ],
+    "messages": [
+     [
+      "Test timed out",
+      52
+     ],
+     [
+      "uncaught rejection: can't access property \"targetFront\", threadFront is null",
+      34
+     ]
+    ],
+    "firstFailure": "2026-11-18",
+    "lastFailure": "2026-11-23",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=autoland&revision=47fb82fa72b463e604289e14efe5a63fa910553d&selectedTaskRun=fEJ9kz_9TH2C2F0Me0dJPg.0",
+    "assignee": "jdescottes",
+    "needinfos": [],
+    "patches": [
+     "D343953",
+     "D345546"
+    ]
+   },
+   {
+    "count": 39,
+    "id": 2011566,
+    "summary": "Frequent Linux devtools/client/inspector/test/browser_inspector_picker-page-reload.js | single tracking bug",
+    "status": "NEW",
+    "resolution": "",
+    "configs": [
+     [
+      "windows11-64-25h2 debug",
+      35
+     ],
+     [
+      "linux2404-64",
+      3
+     ],
+     [
+      "macosx1500-aarch64",
+      1
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      29
+     ],
+     [
+      "mozilla-central",
+      9
+     ],
+     [
+      "mozilla-beta",
+      1
+     ]
+    ],
+    "messages": [
+     [
+      "uncaught rejection: Protocol error (SecurityError): Permission denied to access property \"document\" on cross-origin object from: server0.conn0.watcher2.process11//domwalker80 (resource://devtools/server/actors/inspector/node-picker.js:393:9)",
+      32
+     ],
+     [
+      "uncaught rejection: Protocol error (SecurityError): Permission denied to access property \"document\" on cross-origin object from: server0.conn0.watcher2.process10//domwalker80 (resource://devtools/server/actors/inspector/node-picker.js:393:9)",
+      3
+     ]
+    ],
+    "firstFailure": "2026-11-18",
+    "lastFailure": "2026-11-24",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=autoland&revision=7ed0c0f1e5e8a1de3ae843c2c63be4215fe06ac8&selectedTaskRun=M_94NricSJC58quVaez2Ow.0",
+    "assignee": "ochameau",
+    "needinfos": [],
+    "patches": []
+   },
+   {
+    "count": 38,
+    "id": 2095300,
+    "summary": "Intermittent [tier 2] devtools/server/tests/chrome/test_inspector-pick-color.html | single tracking bug",
+    "status": "NEW",
+    "resolution": "",
+    "configs": [
+     [
+      "macosx1500-aarch64-vms",
+      34
+     ],
+     [
+      "linux2404-64",
+      4
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      16
+     ],
+     [
+      "mozilla-central",
+      12
+     ],
+     [
+      "mozilla-beta",
+      10
+     ]
+    ],
+    "messages": [
+     [
+      "Test timed out. - expected PASS",
+      38
+     ]
+    ],
+    "firstFailure": "2026-11-19",
+    "lastFailure": "2026-11-24",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=mozilla-central&revision=618eadc80cdcd2b948877785453f225262c5f8df&selectedTaskRun=ETIa09DTSMmaRC5wNgFDNQ.0",
+    "assignee": null,
+    "needinfos": [],
+    "patches": []
+   },
+   {
+    "count": 17,
+    "id": 2090348,
+    "summary": "Intermittent devtools/client/inspector/rules/test/browser_rules_style-editor-link.js | uncaught rejection: can't access property \"cm6\", this.config is null",
+    "status": "RESOLVED",
+    "resolution": "FIXED",
+    "configs": [
+     [
+      "windows11-64-25h2",
+      14
+     ],
+     [
+      "linux2404-64",
+      3
+     ]
+    ],
+    "trees": [
+     [
+      "autoland",
+      10
+     ],
+     [
+      "mozilla-central",
+      6
+     ],
+     [
+      "try",
+      1
+     ]
+    ],
+    "messages": [
+     [
+      "uncaught rejection: can't access property \"cm6\", this.config is null",
+      17
+     ]
+    ],
+    "firstFailure": "2026-11-18",
+    "lastFailure": "2026-11-18",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=autoland&revision=badd66520c7c8a5b85ff0db38a4c86711cc47b29&selectedTaskRun=fkVEjwejRGeOghfoia305w.0",
+    "assignee": "jdescottes",
+    "needinfos": [],
+    "patches": [
+     "D343949"
+    ]
+   },
+   {
+    "count": 15,
+    "id": 2039533,
+    "summary": "Intermittent devtools/shared/commands/target-configuration/tests/browser_target_configuration_command_color_scheme.js | single tracking bug",
+    "status": "REOPENED",
+    "resolution": "",
+    "configs": [
+     [
+      "windows11-64-25h2",
+      12
+     ],
+     [
+      "windows11-64-25h2-devedition",
+      3
+     ]
+    ],
+    "trees": [
+     [
+      "mozilla-central",
+      9
+     ],
+     [
+      "mozilla-beta",
+      6
+     ]
+    ],
+    "messages": [
+     [
+      "The dark mode simulation was enabled in the remote iframe when it loaded after reloading - Got false, expected true",
+      14
+     ],
+     [
+      "The dark mode simulation was enabled in the remote iframe when it loaded after navigating to a new browsing context - Got false, expected true",
+      1
+     ]
+    ],
+    "firstFailure": "2026-11-18",
+    "lastFailure": "2026-11-24",
+    "exampleLog": "https://treeherder.mozilla.org/jobs?repo=mozilla-central&revision=618eadc80cdcd2b948877785453f225262c5f8df&selectedTaskRun=RHJ9DmOBQticZlWCNzNmGg.0",
+    "assignee": null,
+    "needinfos": [],
+    "patches": []
+   }
+  ]
  }
 ]
