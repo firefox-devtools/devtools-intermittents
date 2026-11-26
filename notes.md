@@ -1,10 +1,15 @@
 ## 2026-11-25
 
 - [ ] 2087049
+  - Fixed, just leftover failures 
 - [ ] 2011566
+  - Spike / too high volume, needs investigation or skip
 - [ ] 2095300
+  - New, needs investigation
 - [ ] 2090348
+  - Fixed, just leftover failures
 - [ ] 2039533
+  - Spike, needs investigation
 
 ## 2026-11-18
 
